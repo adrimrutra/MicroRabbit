@@ -16,7 +16,7 @@ namespace MicroRabbit.Banking.Data.Repository
             _ctx = ctx;
         }
 
-        public IEnumerable<Account> GetAccount()
+        public IEnumerable<Account> GetAccounts()
         {
             return _ctx.Accounts;
         }

@@ -6,8 +6,11 @@
 
   <ItemGroup>
     <Folder Include="DtoModels\" />
-    <Folder Include="Interfaces\" />
-    <Folder Include="Services\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MacroRabbit.Transfer.Domain\MacroRabbit.Transfer.Domain.csproj" />
+    <ProjectReference Include="..\MicroRabbit.Domain.Core\MicroRabbit.Domain.Core.csproj" />
   </ItemGroup>
 
 </Project>

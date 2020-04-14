@@ -1,5 +1,5 @@
 ﻿using MicroRabbit.Banking.Application.DtoModels;
-using MicroRabbit.Banking.Application.Intercafes;
+using MicroRabbit.Banking.Application.Interfaces;
 using MicroRabbit.Banking.Domain.Commands;
 using MicroRabbit.Banking.Domain.Interfaces;
 using MicroRabbit.Banking.Domain.Models;
@@ -23,7 +23,7 @@ namespace MicroRabbit.Banking.Application.Services
 
         public IEnumerable<Account> GetAccounts()
         {
-            return _accountRepository.GetAccount();
+            return _accountRepository.GetAccounts();
         }
 
         public void Transfer(AccountTransfer accountTransfer)
