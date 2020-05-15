@@ -11,7 +11,7 @@ using Microsoft.Extensions.Logging;
 namespace MicroRabbit.Banking.Api.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     public class BankingController : ControllerBase
     {
         private readonly ILogger<BankingController> _logger;
